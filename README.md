@@ -1,3 +1,3 @@
 # Product-Landing-Page
 
-https://tolgakarasay.github.io/Product-Landing-Page/Index.html
+This website is accesible through https://tolgakarasay.github.io/Product-Landing-Page/Index.html
