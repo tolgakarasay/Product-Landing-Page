@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Setting the rules for header */
+
+header {
+  position: fixed;
+  margin: 0;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(109, 207, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(178, 233, 255, 1) 0%,
+    rgba(178, 233, 255, 1) 30%,
+    rgba(193, 237, 255, 1) 30%,
+    rgba(193, 237, 255, 1) 50%,
+    rgba(217, 244, 255, 1) 50%,
+    rgba(217, 244, 255, 1) 70%,
+    rgba(235, 249, 255, 1) 70%,
+    rgba(235, 249, 255, 1) 100%
+  );
+}
+#logo-link {
+  margin-left: 15%;
+  transition: all 0.3s ease 0s;
+}
+
+#logo-link:hover {
+  filter: invert(100%);
+}
+
+#header-img {
+  width: 70px;
+}
+nav {
+  margin-right: 15%;
+}
+nav li {
+  list-style: none;
+  display: inline;
+}
+nav li a {
+  text-decoration: none;
+  text-align: left;
+  margin-left: 3vw;
+  transition: all 0.5s ease 0s;
+}
+nav li a:hover {
+  background-color: rgba(255, 251, 0, 0.3);
+}
+
+/*Setting the rules for main part*/
+
+main {
+  padding-top: 10vh;
+  height: 100vh;
+  background: rgb(109, 207, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(109, 207, 246, 1) 0%,
+    rgba(109, 207, 246, 1) 30%,
+    rgba(136, 213, 244, 1) 30%,
+    rgba(136, 213, 244, 1) 50%,
+    rgba(169, 220, 240, 1) 50%,
+    rgba(169, 220, 240, 1) 70%,
+    rgba(207, 239, 253, 1) 70%,
+    rgb(207, 239, 253) 100%
+  );
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 10% 0 15%;
+  align-items: center;
+}
+
+#oculus {
+  width: 45vw;
+  margin: 0 auto;
+}
+
+#main-textbox h1 {
+  font-size: 4vw;
+  color: #ffffff;
+}
+
+#main-textbox p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/*Setting the rules for features part*/
+
+#features {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(13, 158, 216) 0%,
+    rgb(13, 158, 216) 70%,
+    rgb(255, 255, 255) 70%,
+    rgb(255, 255, 255) 100%
+  );
+  padding-top: 8vh;
+  padding-right: 10%;
+  padding-left: 6%;
+}
+
+#features-grid {
+  display: grid;
+  margin-top: 10vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+#features-image img {
+  width: 70vw;
+}
+
+#features-textbox p {
+  color: #ffffff;
+  font-size: 40px;
+  list-style: none;
+  margin-top: 4vh;
+}
+
+/*Setting the rules for how-it-works part*/
+
+#how-it-works {
+  height: 100vh;
+  padding-top: 8vh;
+  background: linear-gradient(
+    90deg,
+    rgb(13, 158, 216) 0%,
+    rgb(13, 158, 216) 70%,
+    rgb(255, 255, 255) 70%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+iframe {
+  height: 92vh;
+}
+
+/*Setting the rules for pricing part. */
+
+#pricing {
+  height: 100vh;
+  padding-top: 8vh;
+  background: rgb(13, 158, 216)
+}
+
+#pricing-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.pricing-card {
+  padding: 20px;
+  list-style-position: inside;
+  width: 18vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.31);
+  transition: all 0.1s ease 0s;
+}
+
+
+
+@media (max-width: 1100px) {
+  #pricing-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .pricing-card {
+    width: 22vw;
+  }
+}
+
+@media (max-width: 950px) {
+  #pricing-container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .pricing-card {
+    width: 30vw;
+  }
+}
+
+.pricing-card:hover{
+    -webkit-box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.31);
+    transform: scale(1.04);
+}
+
+.card-heading {
+  font-size: 24px;
+  text-align: center;
+  color: #9c9c9c;
+}
+
+.card-price {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.li-supported {
+  list-style-type: none;
+}
+
+.li-supported:before {
+  content: "✔ ";
+}
+
+.li-non-supported {
+  color: #b1b1b1;
+  list-style-type: none;
+}
+
+.li-non-supported:before {
+  content: "✖ ";
+}
+
+.card-button {
+  height: 40px;
+  font-weight: 900;
+  cursor: pointer;
+  width: 100%;
+  margin: 15px 0;
+  background-color: rgb(255, 246, 124);
+  font-weight: 400;
+  border-radius: 15px;
+}
+
+/*Setting the rules for subscribe part. */
+
+#subscribe{
+  background-color: rgb(13, 158, 216);
+  height: 20vh;
+
+}
+
+#subscribe-container h1{
+  text-align: center;
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0 auto;
+}
+
+#subscribe-container form{
+  margin-top: 3vh;
+  text-align: center
+}
+
+.subscribe-button{
+  height: 40px;
+  cursor: pointer;
+  width: 10%;
+  margin: 15px 0;
+  background-color: rgb(255, 246, 124);
+  font-weight: 400;
+  
+}
+
+#email{
+  height: 40px;
+  font-weight: 400;
+}
+
+#footer{
+  background:rgb(13, 158, 216);
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#copyright{
+  margin-left: 3%;
+}
+
+#designer{
+  margin-right: 3%;
+}

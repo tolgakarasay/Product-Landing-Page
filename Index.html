@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="css/myStyle.css" />
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <!-- Fixed header-->
+  <header id="header">
+    <a id="logo-link" href="#main"><img id="header-img" src="images/logo.png" alt="company logo" /></a>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main page-->
+  <main id="main">
+    <div id="main-grid">
+      <section id="main-textbox">
+        <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+          accumsan lacus vel facilisis.
+        </p>
+      </section>
+      <section id="oculus-box">
+        <img id="oculus" src="images/oculus800_withBack.png" alt="oculus go" />
+      </section>
+    </div>
+  </main>
+  <!--Features page-->
+  <section id="features">
+    <div id="features-grid">
+      <section id="features-textbox">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor
+        </p>
+      </section>
+      <section id="features-image">
+        <img src="images/quest.png" alt="features of oculus" />
+      </section>
+    </div>
+  </section>
+  <!--"How it works" page-->
+  <section id="how-it-works">
+    <iframe id="video" width="100%" height="92%" src="https://www.youtube.com/embed/-bQUBzPZHHQ" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <!-- Pricing Page -->
+  <section id="pricing">
+    <div id="pricing-container">
+      <div class="pricing-card">
+        <h2 class="card-heading">Oculus Go</h2>
+        <h3 class="card-price">$49</h2>
+          <ul>
+            <li class="li-supported">Lorem ipsum</li>
+            <li class="li-supported">Dolor sit amet </li>
+            <li class="li-supported">Consectetur</li>
+            <li class="li-supported">Adipiscing elit</li>
+            <li class="li-non-supported">Sed do eiusmod</li>
+            <li class="li-non-supported">Tempor incididunt</li>
+            <li class="li-non-supported">Ut labore et dolore</li>
+            <li class="li-non-supported">Magna aliqua.</li>
+          </ul>
+          <button class="card-button">Select</button>
+      </div>
+      <div class="pricing-card">
+        <h2 class="card-heading">Oculus Rift</h2>
+        <h3 class="card-price">$99</h2>
+          <ul>
+            <li class="li-supported">Lorem ipsum</li>
+            <li class="li-supported">Dolor sit amet </li>
+            <li class="li-supported">Consectetur</li>
+            <li class="li-supported">Adipiscing elit</li>
+            <li class="li-supported">Sed do eiusmod</li>
+            <li class="li-supported"> Tempor incididunt</li>
+            <li class="li-non-supported">Ut labore et dolore</li>
+            <li class="li-non-supported">Magna aliqua.</li>
+          </ul>
+          <button class="card-button">Select</button>
+      </div>
+      <div class="pricing-card">
+        <h2 class="card-heading">Oculus Pro</h2>
+        <h3 class="card-price">$149</h2>
+          <ul>
+            <li class="li-supported">Lorem ipsum</li>
+            <li class="li-supported">Dolor sit amet </li>
+            <li class="li-supported">Consectetur</li>
+            <li class="li-supported">Adipiscing elit</li>
+            <li class="li-supported">Sed do eiusmod</li>
+            <li class="li-supported">Tempor incididunt</li>
+            <li class="li-supported">Ut labore et dolore</li>
+            <li class="li-supported">Magna aliqua.</li>
+          </ul>
+          <button class="card-button">Select</button>
+      </div>
+    </div>
+  </section>
+
+  <!--Email page-->
+
+  <section id="subscribe">
+    <div id="subscribe-container">
+      <h1>Subscribe to our newsletter and stay updated on our latest special offers!</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+          <input id="submit" type="submit" value="Subscribe" class="subscribe-button" />
+        </form>
+    </div>
+  </section>
+</body>
+
+<!--Footer-->
+<section id="footer">
+    <span id="copyright">
+      Copyright 2019 - All Rights Reserved
+    </span>
+    <span id="designer">
+      Designed by Tolga Karasay
+    </span>
+</section>
+
+
+</html>
